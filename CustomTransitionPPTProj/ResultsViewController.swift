@@ -10,10 +10,18 @@ import UIKit
 class ResultsViewController: UIViewController {
 
     @IBOutlet weak var slowAnimationView: UIView!
+    @IBOutlet weak var slowImage: UIImageView!
     @IBOutlet weak var fastAnimationView: UIView!
+    @IBOutlet weak var fastImage: UIImageView!
+    
+    var animationData: (UIImageView, TimeInterval)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        navigationController?.delegate = self
+        navigationController?.navigationBar.isHidden = true
+        
         fastAnimationView.layer.borderWidth = 2
         fastAnimationView.layer.borderColor = UIColor.black.cgColor
         
@@ -34,38 +42,61 @@ class ResultsViewController: UIViewController {
     }
 
     @objc func handleTap1(_ sender: UITapGestureRecognizer? = nil) {
-        // handling code
+        guard let sender = sender else {return}
+        animationData = (fastImage, 0.30)
+        handleTap(sender: sender)
     }
 
     @objc func handleTap2(_ sender: UITapGestureRecognizer? = nil) {
-        // handling code
+        guard let sender = sender else {return}
+        animationData = (slowImage, 2.25)
+        handleTap(sender: sender)
     }
     
     @objc func handlePan1(_ sender: UIPanGestureRecognizer? = nil) {
-        handlePan(sender: sender!)
+        guard let sender = sender else {return}
+        handlePan(sender: sender)
     }
 
     @objc func handlePan2(_ sender: UIPanGestureRecognizer? = nil) {
-        handlePan(sender: sender!)
+        guard let sender = sender else {return}
+        handlePan(sender: sender)
     }
     
     func handlePan(sender: UIPanGestureRecognizer) {
         let gesture = sender
         let translation = gesture.translation(in: view)
-
-        // 2
         guard let gestureView = gesture.view else {
             return
         }
-
         gestureView.center = CGPoint(
             x: gestureView.center.x + translation.x,
             y: gestureView.center.y + translation.y
         )
-
-        // 3
         gesture.setTranslation(.zero, in: view)
-
+    }
+    
+    func handleTap(sender: UITapGestureRecognizer) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
+        navigationController?.pushViewController(vc!, animated: true)
     }
 }
 
+extension ResultsViewController: UINavigationControllerDelegate {
+
+    func navigationController(
+        _ navigationController: UINavigationController,
+        animationControllerFor operation: UINavigationController.Operation,
+        from fromVC: UIViewController,
+        to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+        switch operation {
+        case .push:
+            return AnimationController(animationDuration: animationData!.1, animationType: .forward , animatorImageView: animationData!.0)
+        case .pop:
+            return AnimationController(animationDuration: animationData!.1, animationType: .backward , animatorImageView: animationData!.0)
+        default: return nil
+        }
+
+    }
+}

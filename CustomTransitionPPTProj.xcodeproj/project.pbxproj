@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		F82800962726440100034EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82800952726440100034EFD /* AppDelegate.swift */; };
 		F82800982726440100034EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82800972726440100034EFD /* SceneDelegate.swift */; };
-		F828009A2726440100034EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82800992726440100034EFD /* ViewController.swift */; };
+		F828009A2726440100034EFD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82800992726440100034EFD /* ResultsViewController.swift */; };
 		F828009D2726440100034EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F828009B2726440100034EFD /* Main.storyboard */; };
-		F828009F2726440300034EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F828009E2726440300034EFD /* Assets.xcassets */; };
 		F82800A22726440300034EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82800A02726440300034EFD /* LaunchScreen.storyboard */; };
+		F8A1F8222726C8E000AD0FAF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1F8212726C8E000AD0FAF /* DetailsViewController.swift */; };
+		F8A1F8242726CDA700AD0FAF /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1F8232726CDA700AD0FAF /* AnimationController.swift */; };
+		F8A1F8262726CDB700AD0FAF /* AnimationImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1F8252726CDB700AD0FAF /* AnimationImageView.swift */; };
+		F8A1F8282726CF0000AD0FAF /* UIBezierPath+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1F8272726CF0000AD0FAF /* UIBezierPath+Extend.swift */; };
+		F8A1F82A2726D80800AD0FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A1F8292726D80800AD0FAF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F82800922726440100034EFD /* CustomTransitionPPTProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransitionPPTProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82800952726440100034EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82800972726440100034EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F82800992726440100034EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82800992726440100034EFD /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F828009C2726440100034EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F828009E2726440300034EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82800A12726440300034EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F82800A32726440300034EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A1F8212726C8E000AD0FAF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F8A1F8232726CDA700AD0FAF /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		F8A1F8252726CDB700AD0FAF /* AnimationImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationImageView.swift; sourceTree = "<group>"; };
+		F8A1F8272726CF0000AD0FAF /* UIBezierPath+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extend.swift"; sourceTree = "<group>"; };
+		F8A1F8292726D80800AD0FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,13 @@
 			children = (
 				F82800952726440100034EFD /* AppDelegate.swift */,
 				F82800972726440100034EFD /* SceneDelegate.swift */,
-				F82800992726440100034EFD /* ViewController.swift */,
+				F82800992726440100034EFD /* ResultsViewController.swift */,
+				F8A1F8212726C8E000AD0FAF /* DetailsViewController.swift */,
+				F8A1F8232726CDA700AD0FAF /* AnimationController.swift */,
+				F8A1F8252726CDB700AD0FAF /* AnimationImageView.swift */,
+				F8A1F8272726CF0000AD0FAF /* UIBezierPath+Extend.swift */,
 				F828009B2726440100034EFD /* Main.storyboard */,
-				F828009E2726440300034EFD /* Assets.xcassets */,
+				F8A1F8292726D80800AD0FAF /* Assets.xcassets */,
 				F82800A02726440300034EFD /* LaunchScreen.storyboard */,
 				F82800A32726440300034EFD /* Info.plist */,
 			);
@@ -125,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82800A22726440300034EFD /* LaunchScreen.storyboard in Resources */,
-				F828009F2726440300034EFD /* Assets.xcassets in Resources */,
+				F8A1F82A2726D80800AD0FAF /* Assets.xcassets in Resources */,
 				F828009D2726440100034EFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F828009A2726440100034EFD /* ViewController.swift in Sources */,
+				F828009A2726440100034EFD /* ResultsViewController.swift in Sources */,
 				F82800962726440100034EFD /* AppDelegate.swift in Sources */,
 				F82800982726440100034EFD /* SceneDelegate.swift in Sources */,
+				F8A1F8262726CDB700AD0FAF /* AnimationImageView.swift in Sources */,
+				F8A1F8222726C8E000AD0FAF /* DetailsViewController.swift in Sources */,
+				F8A1F8242726CDA700AD0FAF /* AnimationController.swift in Sources */,
+				F8A1F8282726CF0000AD0FAF /* UIBezierPath+Extend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
