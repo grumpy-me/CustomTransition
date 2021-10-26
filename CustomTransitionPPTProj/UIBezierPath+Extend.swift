@@ -10,7 +10,7 @@ import UIKit.UIBezierPath
 
 extension UIBezierPath {
 
-    static func roundedRectPathBazzy(basedOn rect: CGRect, cornerRadius: CGFloat, corners: UIRectCorner) -> UIBezierPath {
+    static func customRoundedRectanglePath(basedOn rect: CGRect, cornerRadius: CGFloat, corners: UIRectCorner) -> UIBezierPath {
         let origin = rect.origin
         let size = rect.size
 

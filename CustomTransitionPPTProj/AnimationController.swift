@@ -176,7 +176,7 @@ extension AnimationController: UIViewControllerAnimatedTransitioning {
     }
 
     func path(basedOn rect: CGRect, cornerRadius: CGFloat, corners: UIRectCorner) -> CGPath {
-        return UIBezierPath.roundedRectPathBazzy(basedOn: rect, cornerRadius: cornerRadius, corners: corners).cgPath
+        return UIBezierPath.customRoundedRectanglePath(basedOn: rect, cornerRadius: cornerRadius, corners: corners).cgPath
     }
 
     func animatePath(for layer: CAShapeLayer, toPath: CGPath, duration: TimeInterval, style: CAMediaTimingFunctionName) {
