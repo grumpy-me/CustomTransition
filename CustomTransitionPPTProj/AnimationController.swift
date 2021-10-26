@@ -9,8 +9,8 @@ import UIKit
 
 class AnimationController: NSObject {
 
-    private var animationDuration : Double = 2.25
-    private var animationType: AnimationType = .backward
+    private var animationDuration : Double
+    private var animationType: AnimationType
     private var imageViewPassed: UIImageView
 
     enum AnimationType {
@@ -67,7 +67,6 @@ extension AnimationController: UIViewControllerAnimatedTransitioning {
         animatingCard.frame.origin.x = animatingView.frame.minX // 0
         animatingCard.frame.origin.y = animatingView.frame.maxY
         animatingCard.layer.cornerRadius = cornerRadius
-        animatingCard.alpha = 1
 
         containerView.addSubview(imageCoverView)
         containerView.addSubview(animatingView)
@@ -83,7 +82,9 @@ extension AnimationController: UIViewControllerAnimatedTransitioning {
         animatingCard.layer.mask = containerMask
 
         animatePath(for: containerMask,
-                    toPath: path(basedOn: .init(origin: CGPoint(x: 0, y: 0), size: CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 350)),
+                    toPath: path(basedOn: .init(origin: .zero,
+                                                size: CGSize(width: UIScreen.main.bounds.width,
+                                                             height: UIScreen.main.bounds.height - 350)),
                                  cornerRadius: cornerRadius,
                                  corners: .allCorners),
                     duration: duration, style: .easeInEaseOut)
@@ -97,7 +98,6 @@ extension AnimationController: UIViewControllerAnimatedTransitioning {
             animatingView.contentStyle = .scaleAspectFill
 
             animatingCard.frame.origin = .init(x: 0, y: 350)
-            animatingCard.alpha = 1
 
         }) { _ in
 
@@ -185,9 +185,9 @@ extension AnimationController: UIViewControllerAnimatedTransitioning {
         pathAnimation.duration = duration
         pathAnimation.fromValue = layer.path
         pathAnimation.toValue = toPath
-        layer.path = toPath
         pathAnimation.isRemovedOnCompletion = true
         layer.add(pathAnimation, forKey: "path")
+        layer.path = toPath
     }
 
 

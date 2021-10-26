@@ -97,6 +97,6 @@ extension ResultsViewController: UINavigationControllerDelegate {
             return AnimationController(animationDuration: animationData!.1, animationType: .backward , animatorImageView: animationData!.0)
         default: return nil
         }
-
     }
+    
 }

@@ -35,9 +35,11 @@ class AnimationImageView: UIView {
             let heightRatio = image.size.height / bounds.size.height
             switch contentStyle {
             case .scaleAspectFit:
-                imageView.frame.size = .init(width: image.size.width/max(widthRatio, heightRatio), height: image.size.height/max(widthRatio, heightRatio))
+                imageView.frame.size = .init(width: image.size.width/max(widthRatio, heightRatio),
+                                             height: image.size.height/max(widthRatio, heightRatio))
             case .scaleAspectFill:
-                imageView.frame.size = .init(width: image.size.width/min(widthRatio, heightRatio), height: image.size.height/min(widthRatio, heightRatio))
+                imageView.frame.size = .init(width: image.size.width/min(widthRatio, heightRatio),
+                                             height: image.size.height/min(widthRatio, heightRatio))
             }
             imageView.center = .init(x: bounds.size.width / 2, y: bounds.size.height / 2)
         }
