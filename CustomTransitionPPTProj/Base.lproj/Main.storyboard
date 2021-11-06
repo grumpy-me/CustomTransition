@@ -16,51 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2C-3Q-U2J" userLabel="fast animation">
-                                <rect key="frame" x="74" y="82.666666666666671" width="227" height="205.66666666666663"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JLP_1055" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-80-Mt2">
-                                        <rect key="frame" x="2" y="2" width="223" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="223" id="Ij1-wP-Lc4"/>
-                                            <constraint firstAttribute="height" constant="120" id="O6Q-RI-btS"/>
-                                        </constraints>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JX4-fU-XzZ">
-                                        <rect key="frame" x="10" y="132" width="207" height="63.666666666666657"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Fire Safety Contractors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6W-Su-9mS">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Safety Plus Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-cG-Qdv">
-                                                <rect key="frame" x="0.0" y="23" width="207" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvn-G9-nAR">
-                                                <rect key="frame" x="0.0" y="43.333333333333343" width="207" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="jw6-80-Mt2" secondAttribute="trailing" constant="2" id="57e-8l-nKL"/>
-                                    <constraint firstItem="JX4-fU-XzZ" firstAttribute="leading" secondItem="A2C-3Q-U2J" secondAttribute="leading" constant="10" id="Aeq-Qb-p7M"/>
-                                    <constraint firstItem="JX4-fU-XzZ" firstAttribute="top" secondItem="jw6-80-Mt2" secondAttribute="bottom" constant="10" id="Jft-83-q6o"/>
-                                    <constraint firstItem="jw6-80-Mt2" firstAttribute="leading" secondItem="A2C-3Q-U2J" secondAttribute="leading" constant="2" id="Zpe-6V-SSn"/>
-                                    <constraint firstAttribute="bottom" secondItem="JX4-fU-XzZ" secondAttribute="bottom" constant="10" id="aEV-yM-X5J"/>
-                                    <constraint firstAttribute="trailing" secondItem="JX4-fU-XzZ" secondAttribute="trailing" constant="10" id="bev-gp-DFd"/>
-                                    <constraint firstItem="jw6-80-Mt2" firstAttribute="top" secondItem="A2C-3Q-U2J" secondAttribute="top" constant="2" id="coM-dJ-is8"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC6-aV-rEv" userLabel="slow Animation">
                                 <rect key="frame" x="74" y="366.33333333333331" width="227" height="205.66666666666669"/>
                                 <subviews>
@@ -113,6 +68,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2C-3Q-U2J" userLabel="fast animation">
+                                <rect key="frame" x="74" y="145" width="227" height="205.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JLP_1055" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-80-Mt2">
+                                        <rect key="frame" x="2" y="2" width="223" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="223" id="Ij1-wP-Lc4"/>
+                                            <constraint firstAttribute="height" constant="120" id="O6Q-RI-btS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JX4-fU-XzZ">
+                                        <rect key="frame" x="10" y="132" width="207" height="63.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Fire Safety Contractors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6W-Su-9mS">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Safety Plus Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-cG-Qdv">
+                                                <rect key="frame" x="0.0" y="23" width="207" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvn-G9-nAR">
+                                                <rect key="frame" x="0.0" y="43.333333333333343" width="207" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jw6-80-Mt2" secondAttribute="trailing" constant="2" id="57e-8l-nKL"/>
+                                    <constraint firstItem="JX4-fU-XzZ" firstAttribute="leading" secondItem="A2C-3Q-U2J" secondAttribute="leading" constant="10" id="Aeq-Qb-p7M"/>
+                                    <constraint firstItem="JX4-fU-XzZ" firstAttribute="top" secondItem="jw6-80-Mt2" secondAttribute="bottom" constant="10" id="Jft-83-q6o"/>
+                                    <constraint firstItem="jw6-80-Mt2" firstAttribute="leading" secondItem="A2C-3Q-U2J" secondAttribute="leading" constant="2" id="Zpe-6V-SSn"/>
+                                    <constraint firstAttribute="bottom" secondItem="JX4-fU-XzZ" secondAttribute="bottom" constant="10" id="aEV-yM-X5J"/>
+                                    <constraint firstAttribute="trailing" secondItem="JX4-fU-XzZ" secondAttribute="trailing" constant="10" id="bev-gp-DFd"/>
+                                    <constraint firstItem="jw6-80-Mt2" firstAttribute="top" secondItem="A2C-3Q-U2J" secondAttribute="top" constant="2" id="coM-dJ-is8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
